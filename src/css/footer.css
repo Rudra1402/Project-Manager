@@ -1,0 +1,101 @@
+.footer {
+    background-color: #212529;
+    width: calc(100% - 40px);
+    padding: 40px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: NexaLight;
+}
+
+.footer .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .basic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.footer .basic img {
+    height: 50px;
+    width: 36.5px;
+}
+
+.footer .basic .basic-title {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.footer .basic .basic-des {
+    padding-top: 15px;
+    border-top: 1px solid white;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.footer .routes {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.footer .routes .routes-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.footer .routes a {
+    text-decoration: none;
+    color: lightblue;
+    margin: 7.5px 0;
+    font-size: 18px;
+}
+
+.footer .socials {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.footer .socials .socials-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.footer .socials a {
+    text-decoration: none;
+    color: lightblue;
+    margin: 7.5px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.footer .socials a .f-icon {
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: white;
+    color: crimson;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .pm-arr {
+    font-size: 14px;
+}
+
+.footer hr {
+    width: 80%;
+    color: #fff8;
+    margin: 15px 0;
+}

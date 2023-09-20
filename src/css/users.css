@@ -1,0 +1,108 @@
+.users-container {
+    /* height: calc(100% - 60px); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: NexaRegular;
+}
+.users-container .search-container {
+    width: calc(100% - 80px);
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 40px;
+}
+
+.users-container .search-container input {
+    all: unset;
+    min-width: 250px;
+    background-color: #fff5;
+    padding: 8px 14px;
+    height: 34px;
+    border-radius: 8px;
+}
+
+.users-container .search-container input::placeholder {
+    color: #0006;
+}
+
+.users-container .users-list {
+    /* height: calc(100% - 160px); */
+    width: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    padding: 5px 25px;
+    overflow-y: auto;
+    font-size: 14px;
+    /* margin-bottom: 30px; */
+}
+
+.users-container table {
+    width: 100%;
+    overflow-x: auto;
+    text-align: left;
+}
+
+.users-container th {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: white;
+    height: 40px;
+    padding: 4px;
+}
+
+.users-container td {
+    color: #d6d6d6;
+    padding: 4px;
+}
+
+.users-container .username {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.users-container .username img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #fff8;
+    display: grid;
+    place-items: center;
+    margin-right: 8px;
+    color: rgb(14, 0, 135);
+}
+
+.users-container .fullname {
+    width: 200px;
+}
+
+.users-container .bio {
+    width: 360px;
+}
+
+.users-container .email {
+    width: 160px;
+}
+
+.users-container .dob {
+    width: 140px;
+}
+
+.users-container .gender {
+    width: 120px;
+}
+
+.users-container .github {
+    width: 140px;
+}
+
+.users-container .twitter {
+    width: 140px;
+}
+
+.users-container table td a {
+    text-decoration: none;
+    color: lightskyblue;
+}

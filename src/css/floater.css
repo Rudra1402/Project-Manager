@@ -1,0 +1,169 @@
+@keyframes fadein {
+    0% {
+        color: transparent;
+        top: 0;
+    }
+    100% {
+        color: white;
+        top: 50%;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        color: white;
+        top: 50%;
+    }
+    100%{
+        color: transparent;
+        top: 100%;
+    }
+}
+
+.shadow {
+    z-index: 4;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.floater {
+    z-index: 5;
+    height: calc(80vh - 60px);
+    width: calc(50vw - 40px);
+    padding: 30px 20px;
+    background-color: #001247;
+    color: white;
+    border-radius: 12px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    animation: fadein 0.25s ease-in-out;
+    overflow-y: auto;
+}
+
+.floater .close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.floater .pname {
+    padding-bottom: 12px;
+    border-bottom: 1px solid white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.floater .ptech {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.floater .pdes {
+    width: 65%;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.floater .pide {
+    margin-bottom: 10px;
+}
+
+.floater .pdate {
+    margin-bottom: 20px;
+}
+
+.floater .flex {
+    display: flex;
+}
+
+.floater .flex a {
+    margin: 0 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid orange;
+    color: orange;
+    padding: 7px 12px;
+}
+
+.floater .name-header {
+    display: flex;
+}
+
+.floater .name-header img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 28px;
+    background-color: lightblue;
+    color: #001247;
+    display: grid;
+    place-items: center;
+}
+
+.floater .name-header .sub-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8px;
+}
+
+.floater .name-header .sub-header .fullname {
+    white-space: nowrap;
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+
+.floater .name-header .sub-header .username {
+    color: #fff8;
+}
+
+.floater .bio {
+    padding: 15px 8px 20px;
+    border-bottom: 1px solid white;
+    width: 60%;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.floater .user-data {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+.floater .user-data .map-list-floater {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.floater .user-data .map-list-floater .total {
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    color: coral;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    margin: 2px 0;
+}
+
+.floater .user-data .map-list-floater .name {
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}

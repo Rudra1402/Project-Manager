@@ -1,0 +1,130 @@
+.main {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 60px);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 20px;
+    font-family: NexaRegular;
+}
+
+.gif {
+    width: 35vw;
+    height: auto;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 2px #fff2;
+}
+
+.contain {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 40px; */
+}
+
+.head-title {
+    /* text-align: center; */
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 18px;
+    text-decoration-thickness: 1px;
+}
+
+.head-des {
+    /* text-align: center; */
+    font-size: 18px;
+    color: white;
+    letter-spacing: 0.5px;
+    font-family: NexaLight;
+}
+
+.home img {
+    height: 125px;
+    margin-left: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 12px 3px #5c5c5c; */
+}
+
+.home-links {
+    margin: 24px 0;
+    display: flex;
+}
+
+.home-links .welcome-user {
+    font-size: 21px;
+    color: lightgreen;
+}
+
+.home-links a {
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 7.5px 12px;
+    background-color: #002147a8;
+    color: white;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+}
+
+.home-links a:hover {
+    background-color: #002147;
+}
+
+.quote {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    width: fit-content;
+    color: lightgreen;
+    padding: 10px 15px;
+    box-shadow: 0 0 8px 1px #fff5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.quote .q-l, .q-r {
+    position: relative;
+    transition: all 0.5s;
+    color: orange;
+}
+
+@keyframes goup {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -8px;
+    }
+}
+
+@keyframes godown {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: -8px;
+    }
+}
+
+.quote:hover > .q-l {
+    animation: goup 0.3s ease-in-out;
+    top: -8px;
+}
+
+.quote:hover > .q-r {
+    animation: godown 0.3s ease-in-out;
+    bottom: -8px;
+}

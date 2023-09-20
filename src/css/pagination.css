@@ -1,0 +1,35 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 10px 0;
+    color: white;
+}
+
+.pagination .page-nos {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.pagination .page-icon, .page-nos p {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.pagination .page-icon {
+    scale: 0.6;
+    padding: 10px;
+}
+
+.pagination .page-icon:hover, .page-nos p:hover {
+    background-color: #fff4;
+}
+
+.disabled {
+    color: #fff6;
+}

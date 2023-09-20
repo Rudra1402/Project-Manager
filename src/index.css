@@ -1,0 +1,68 @@
+@font-face {
+  font-family: NexaRegular;
+  src: url('./assets/fonts/Nexa\ Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: NexaLight;
+  src: url('./assets/fonts/Nexa\ Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: NexaBold;
+  src: url('./assets/fonts/Nexa\ Bold.otf') format('opentype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(300deg, #123456, #3a6997, #123456);
+  background-attachment: fixed;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  height: 100vh;
+  max-height: -webkit-fill-available;
+}
+
+/* @keyframes morph {
+    0%, 100% {
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    }
+    33% {
+        border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+    }
+    66% {
+        border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+    }
+}
+
+.blob {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 70%;
+    height: 90%;
+    min-width: 16rem;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    background: linear-gradient(to top, #dc143c10, #adff2f10);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    animation: morph 3s linear infinite;
+} */

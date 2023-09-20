@@ -1,0 +1,130 @@
+.post-fe-proj {
+    padding: 10px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: relative;
+    font-family: NexaRegular;
+}
+
+.post-fe-proj .post-head {
+    font-size: 28px;
+    /* margin-bottom: 20px; */
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.post-fe-proj form {
+    width: 50vw;
+}
+
+.post-fe-proj form .p-flex {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-fe-proj form .rect {
+    width: 96%;
+    margin: 7.5px 5px;
+    font-size: 18px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.post-fe-proj form .p-flex .rect {
+    width: 48%;
+    font-size: 18px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 7.5px 5px;
+}
+
+.post-fe-proj form .rect > div {
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: #fff8;
+}
+
+.post-fe-proj form input {
+    all: unset;
+    width: 100%;
+}
+
+.post-fe-proj form select {
+    all: unset;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    /* border: 1px solid white; */
+    /* padding: 8px; */
+    border-radius: 5px;
+    margin: 7.5px 0;
+}
+
+.post-fe-proj form select option {
+    background-color: white;
+    font-family: sans-serif;
+    color: coral;
+}
+
+.post-fe-proj form textarea {
+    all: unset;
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+    height: 150px;
+    font-size: 18px;
+    /* border: 1px solid white; */
+    /* padding: 8px; */
+    border-radius: 5px;
+    margin: 7.5px 0;
+}
+
+.post-fe-proj form button {
+    all: unset;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.post-fe-proj a {
+    all: unset;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid orangered;
+    background-color: orangered;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+@keyframes fillcolor {
+    0% {
+        /* background-color: transparent; */
+        left: -100px;
+    }
+    50% {
+        /* background-color: lightcoral; */
+        rotate: 360deg;
+        left: 100px;
+    }
+    100% {
+        /* background-color: transparent; */
+        rotate: 0deg;
+        left: -100px;
+    }
+}
+
+.icon {
+    animation: fillcolor 2.8s ease-in-out infinite;
+    margin: 15px 0;
+    font-size: 24px;
+    position: relative;
+    right: 100px;
+}
